@@ -66,19 +66,19 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="row">
-            <div class="col-md-3 box">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <label>輸入身高(m)</label>
                     <input type="number" class="form-control" id="height" placeholder="身高">
                 </div>
             </div>
-            <div class="col-md-3 box">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <label>輸入體重(kg)</label>
                     <input type="number" class="form-control" id="weight" placeholder="體重">
                 </div>
             </div>
-            <div class="col-md-3 box">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <label>選擇性別</label>
                     <select class="form-control" id="sex">
@@ -88,24 +88,24 @@
                     </select>
                 </div>
             </div>
-            <div class="col-md-3 box">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <label>輸入年齡</label>
                     <input type="number" class="form-control" id="age" placeholder="年齡">
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <button type="submit" class="btn btn-default">送出</button>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <label>您的BMI值</label>
                     <input type="text" class="form-control" id="bmi" placeholder="" readonly="true">
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <div class="form-group">
                     <label>您的體脂率</label>
                     <input type="text" class="form-control" id="fat" placeholder="" readonly="true">
@@ -123,12 +123,12 @@
         function remind(set, msg) {
             alert(set + msg);
         }
-        $('button').on('click', function(event) {
+        $('button.btn').on('click', function(event) {
             var h = $('#height').val(),
                 w = $('#weight').val(),
                 sex = $('#sex').val(),
                 age = $('#age').val();
-
+                
             if (h == '') {
                 remind('請輸入', '身高');
             } else if (w == '') {
